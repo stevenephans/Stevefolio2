@@ -29,7 +29,8 @@ body {
 }
 
 .nav {
-  max-width: 200px;
+  width: 25vw;
+  padding-top: 20px;
   background-color: rgb(216, 224, 226);
   display: flex;
   flex-direction: column;
@@ -37,18 +38,40 @@ body {
   flex-grow: 1;
 }
 
+.logo {
+  align-self: center;
+  width:75%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  background-color: rgb(216, 224, 226);
+  padding-top: 20px;
+}
+
 ul {
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 100%;
   background-color: rgb(216, 224, 226);
   text-align: center;
 }
 
+li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 a.pagelink:link,
 a.pagelink:visited {
-  display: flex;
   color: rgb(131, 128, 128);
   padding: 10px 25px;
   margin: 5px 0px;
@@ -74,20 +97,6 @@ a.pagelink:active {
   background-color: #efefef;
 }
 
-.logo {
-  max-width: 180px;
-  max-height: 180px;
-  padding: 10px;
-  text-align: center;
-}
-
-.menu {
-  flex-grow: 1;
-  width: 100%;
-  background-color: rgb(216, 224, 226);
-  padding-top: 25px;
-}
-
 .header {
   flex-basis: content;
   padding: 0 15px;
@@ -99,7 +108,7 @@ a.pagelink:active {
   display: flex;
   flex-grow: 1;
   background-color: #efefef;
-  align-content: stretch;
+  align-content: flex-start;
   margin: 10px;
   justify-content: flex-start;
   border-top: 1px solid rgb(216, 224, 226);
@@ -107,21 +116,21 @@ a.pagelink:active {
 
 .profpic {
   position: relative;
-  min-height: 500px;
-  min-width: 400px;
-  max-height: 500px;
-  max-width: 400px;
+  min-height: 625px;
+  min-width: 500px;
+  max-height: 625px;
+  max-width: 500px;
   margin: 20px;
   margin-right: 10px;
   border-radius: 25px;
 }
 
-span {
+.bio {
   float: right;
   margin: 20px;
   margin-left: 10px;
   min-width: 250px;
-  height: 100vh;
+  /*height: 100vh;*/
   flex-grow: 1;
   color: rgb(131, 128, 128);
   font-family: "Raleway";
