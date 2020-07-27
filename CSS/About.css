@@ -130,7 +130,6 @@ a.pagelink:active {
   margin: 20px;
   margin-left: 10px;
   min-width: 250px;
-  /*height: 100vh;*/
   flex-grow: 1;
   color: rgb(131, 128, 128);
   font-family: "Raleway";
