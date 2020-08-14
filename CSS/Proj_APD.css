@@ -108,6 +108,28 @@ a.pagelink:active {
   background-color: #efefef;
 }
 
+h1 {
+  font-size: 36px;
+}
+
+#title {
+  font-family: "Great Fighter Demo";
+  font-size: 80px;
+  text-align: center;
+  color: #ff3b3f;
+  padding: 20px 10px;
+}
+
+#skillz {
+  color: rgb(131, 128, 128);
+  font-family: "Raleway";
+  font-size: 16px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -135,6 +157,15 @@ a.pagelink:active {
   background-repeat: no-repeat;
 }
 
+#about {
+  color: rgb(131, 128, 128);
+  font-family: "Raleway";
+  font-size: 16px;
+  margin: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  border-bottom: 1px solid rgb(216, 224, 226);
+}
 .projinfo {
   display: flex;
   flex-direction: column;
@@ -162,28 +193,6 @@ iframe {
   width: 100%;
   align-self: center;
   justify-content: center;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-#title {
-  font-family: "Great Fighter Demo";
-  font-size: 80px;
-  text-align: center;
-  color: #ff3b3f;
-  padding: 20px 10px;
-}
-
-#about {
-  color: rgb(131, 128, 128);
-  font-family: "Raleway";
-  font-size: 16px;
-  margin: 20px;
-  padding-bottom: 20px;
-  text-align: justify;
-  border-bottom: 1px solid rgb(216, 224, 226);
 }
 
 #logo {
