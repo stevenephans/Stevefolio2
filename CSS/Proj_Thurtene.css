@@ -28,26 +28,57 @@ body {
 }
 
 .nav {
-  max-width: 200px;
+  min-width: 210px;
+  max-width: 210px;
+  padding-top: 20px;
   background-color: rgb(216, 224, 226);
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: center;
+  /*flex-grow: 1;*/
+}
+
+.logo {
+  align-self: center;
+  width:75%;
+}
+
+#logo {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
+  width: 100%;
+  background-color: rgb(216, 224, 226);
+  padding-top: 20px;
 }
 
 ul {
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 100%;
   background-color: rgb(216, 224, 226);
   text-align: center;
 }
 
+li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 a.pagelink:link,
 a.pagelink:visited {
-  display: flex;
   color: rgb(131, 128, 128);
   padding: 10px 25px;
   margin: 5px 0px;
@@ -87,25 +118,29 @@ a.pagelink:active {
   background-color: #efefef;
 }
 
-.logo {
-  max-width: 180px;
-  max-height: 180px;
-  padding: 10px;
-  text-align: center;
-}
-
-.menu {
-  flex-grow: 1;
-  width: 100%;
-  background-color: rgb(216, 224, 226);
-  padding-top: 25px;
-}
-
 .header {
   flex-basis: content;
   padding: 0 15px;
   padding-bottom: 0px;
   background-color: #efefef;
+}
+
+#title {
+  font-family: "Great Fighter Demo";
+  font-size: 80px;
+  text-align: center;
+  color: #ff3b3f;
+  padding: 20px 10px 5px 10px;
+}
+
+#skillz {
+  color: rgb(131, 128, 128);
+  font-family: "Raleway";
+  font-size: 16px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .page {
@@ -124,7 +159,7 @@ a.pagelink:active {
 .bannerbox {
   width: 100%;
   /*height: 330px;*/
-  height: 60vh;
+  height: 500px;
 }
 
 .parallax {
@@ -137,44 +172,30 @@ a.pagelink:active {
 }
 
 .projinfo {
+  width:96%;
+  align-self: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: rgb(131, 128, 128);
   font-family: "Raleway";
   font-size: 16px;
   margin: 0px 20px;
   padding-bottom: 20px;
-  text-align: justify;
-  background-color: #efefef;
-  flex: 1;
+  justify-content: center;
   align-content: center;
-  justify-content: center;
-  align-items: left;
-  justify-items: left;
-  border-bottom: 1px solid rgb(216, 224, 226);
+  /*border-bottom: 1px solid rgb(216, 224, 226);*/
 }
 
-iframe {
-  align-self: center;
+#projpic{
+  width:48%;
+  height:auto;
 }
-
-.rowofpics {
-  display: flex;
-  width: 100%;
-  align-self: center;
-  justify-content: center;
+.leftypic {
+  margin-right:5px;
 }
 
 h1 {
   font-size: 36px;
-}
-
-#title {
-  font-family: "Great Fighter Demo";
-  font-size: 80px;
-  text-align: center;
-  color: #ff3b3f;
-  padding: 20px 10px;
 }
 
 #about {
@@ -187,12 +208,6 @@ h1 {
   border-bottom: 1px solid rgb(216, 224, 226);
 }
 
-#logo {
-  max-width: 100%;
-  max-height: 100%;
-  cursor: pointer;
-}
-
 footer {
   flex-grow: 1;
   max-height: 50px;
@@ -200,6 +215,7 @@ footer {
   margin: 0 10px;
   text-align: center;
   vertical-align: middle;
+  align-content: center;
   background-color: #efefef;
   color: rgb(131, 128, 128);
   font-family: "raleway";
@@ -208,8 +224,8 @@ footer {
 }
 
 .footLink {
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
   padding: 5px;
   cursor: pointer;
 }

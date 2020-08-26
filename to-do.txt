@@ -1,0 +1,18 @@
+- ADD DATES UNDER PROJECT SKILLS FOR EACH
+- CSS CLEANUP
+- ADD PROJECT THUMBNAIL IMAGES
+- ADD INDIV PROJECT BANNER IMAGES
+- FINISH 13 PAGE
+	- remove subtitles
+	- put a bunch of pictures chronologically
+	- add 'skills' list under project header (like APD has)
+- FINISH COURSE PAGE
+	- reduce width
+	- finalize displayed courses
+	- 
+
+
+nav
+logo
+menu
+page
