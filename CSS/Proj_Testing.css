@@ -172,21 +172,6 @@ a.pagelink:active {
   border-bottom: 1px solid rgb(216, 224, 226);
 }
 
-.carouselll {
-  width: 96%;
-  align-self: center;
-  display: flex;
-  flex-direction: row;
-  color: rgb(131, 128, 128);
-  font-family: "Raleway";
-  font-size: 16px;
-  /*margin: 20px;*/
-  padding: 40px;
-  justify-content: center;
-  align-items: center;
-  /*border-bottom: 1px solid rgb(216, 224, 226);*/
-}
-
 .projinfo {
   align-self: center;
   display: flex;
@@ -239,6 +224,26 @@ a.pagelink:active {
 .img-comp-slider:hover {
   background-color: #03b2b4;
   transition-duration: 0.5s;
+}
+
+.carouselContainer {
+  position: relative;
+  overflow: hidden;
+  height: 700px;
+}
+
+.carousel {
+  position: absolute;
+  overflow: hidden;
+  width: initial;
+}
+
+.slide {
+  display: inline-block;
+}
+
+.slide img {
+  display: inline-block;
 }
 
 .afterPic {
