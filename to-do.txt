@@ -11,8 +11,10 @@
 	- finalize displayed courses
 	- 
 
-
-nav
-logo
-menu
-page
+- IMAGE CAROUSEL CODE
+	- center first image on page
+	- functions for forward and back
+		- move correct amount based off image widths
+		- add class to change non active image's opacity
+	- add arrows (hint: put below w/ neg top margin) <--CSS only
+	- limit size of carouselContainer to have 'padding' <-- CSS only

@@ -12,17 +12,18 @@
     <section class="container">
       <div class="nav">
         <div class="logo">
-          <a href="About.html"><img id="logo" src="images/SWE_Blue.png"/></a>
+          <a href="About.html"><img id="logo" src="images/SWE_Blue.png" /></a>
         </div>
         <div class="menu">
           <ul>
+            <li><a class="pagelink" href="About.html">About</a></li>
             <li>
               <a class="pagelink" href="Projects.html">Projects</a>
             </li>
             <li>
               <a class="pagelink" href="Courses.html">Courses</a>
             </li>
-            <li><a class="pagelink" href="About.html">About</a></li>
+
             <li>
               <a class="pagelink" href="CV_EVANS.pdf" target="_blank">CV</a>
             </li>
@@ -45,7 +46,7 @@
         </div>
 
         <div class="page">
-          <!-- COLUMN ONE START -->
+          <!------------------ COLUMN ONE START [CU] ---------------------------------------------------------------------------->
           <div class="school">
             <!-- !SOFT MACHINES -->
             <div class="mama" id="min">
@@ -70,17 +71,18 @@
                     >Dr. Christoph Keplinger's
                   </a>
                   <span>
-                    class on application of non-rigid materials in robotics and electronics was
-                    equal parts informative and inspiring. Course material focused on the benefits
-                    of emerging technologies and potential applications.
+                    class on application of non-rigid materials in robotics and
+                    electronics was equal parts informative and inspiring.
+                    Course material focused on the benefits of emerging
+                    technologies and potential applications.
                   </span>
                 </div>
               </div>
             </div>
-            <!-- !DFM -->
+            <!-- !FEEDBACK CONTROL -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
-                <p class="title">Design For Manufacturing</p>
+                <p class="title">Feedback Control</p>
               </div>
               <div class="child2">
                 <div class="grankid1">
@@ -100,9 +102,41 @@
                     >Dr. Christoph Keplinger's
                   </a>
                   <span>
-                    class on application of non-rigid materials in robotics and electronics was
-                    equal parts informative and inspiring. Course material focused on the benefits
-                    of emerging technologies and potential applications.
+                    class on application of non-rigid materials in robotics and
+                    electronics was equal parts informative and inspiring.
+                    Course material focused on the benefits of emerging
+                    technologies and potential applications.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- !FEA -->
+            <div class="mama" id="min">
+              <div class="child1" id="EC">
+                <p class="title">Finite Element Analysis</p>
+              </div>
+              <div class="child2">
+                <div class="grankid1">
+                  <div class="profpic">
+                    <img class="slide" src="images/BioPic2.jpg" />
+                    <img class="slide" src="images/BioPic1.jpg" />
+                    <img class="slide" src="images/BioPic3.jpg" />
+                    <img class="slide" src="images/BioPic4.jpg" />
+                  </div>
+                </div>
+
+                <div class="grankid2">
+                  <a
+                    href="https://www.ted.com/talks/christoph_keplinger_the_artificial_muscles_that_will_power_robots_of_the_future"
+                    class="inlineLink"
+                    target="_blank"
+                    >Dr. Christoph Keplinger's
+                  </a>
+                  <span>
+                    class on application of non-rigid materials in robotics and
+                    electronics was equal parts informative and inspiring.
+                    Course material focused on the benefits of emerging
+                    technologies and potential applications.
                   </span>
                 </div>
               </div>
@@ -116,28 +150,33 @@
             </div>
           </div>
 
-          <!-- COLUMN TWO START -->
+          <!------------------ COLUMN TWO START [Not CU] ---------------------------------------------------------------------------->
           <div class="school">
             <!-- !DE ANZA -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
-                <p class="title">CNC MACHINING & CAM</p>
+                <p class="title">De Anza College</p>
               </div>
               <div class="child2"></div>
             </div>
             <!-- !JS REACT -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
-                <p class="title">JS React Native</p>
+                <p class="title">Udemy - React Native</p>
               </div>
               <div class="child2"></div>
             </div>
             <!-- !C#/.NET -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
-                <p class="title">
-                  Unity & C#
-                </p>
+                <p class="title">Udemy - Unity/C# Game Design</p>
+              </div>
+              <div class="child2"></div>
+            </div>
+            <!-- WEB DEV -->
+            <div class="mama" id="min">
+              <div class="child1" id="EC">
+                <p class="title">Udemy - Web Development</p>
               </div>
               <div class="child2"></div>
             </div>
@@ -146,10 +185,18 @@
 
         <footer class="footer">
           <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
-            <img class="footLink" src="images/Steve-LinkedIn.png" style="height:30px" />
+            <img
+              class="footLink"
+              src="images/Steve-LinkedIn.png"
+              style="height: 30px"
+            />
           </a>
           <a href="https://github.com/stevenephans" target="_blank">
-            <img class="footLink" src="images/Steve-Github.png" style="height:30px" />
+            <img
+              class="footLink"
+              src="images/Steve-Github.png"
+              style="height: 30px"
+            />
           </a>
           <!-- <p>-- POWERED BY STEVE --</p> -->
         </footer>
@@ -158,67 +205,34 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-      $(document).ready(function() {
-        $(".child1").click(function() {
+      $(document).ready(function () {
+        $(".child1").click(function () {
           var $w_Max = $(".page").width();
           var $w_Min = $w_Max / 2;
-          if (
-            $(this)
-              .parent()
-              .attr("id") == "min"
-          ) {
+          if ($(this).parent().attr("id") == "min") {
             var $title = $(this).children(".title");
-            $("p.title")
-              .not($title)
-              .slideUp("fast");
-            $(this)
-              .parent()
-              .siblings()
-              .slideUp("fast");
+            $("p.title").not($title).slideUp("fast");
+            $(this).parent().siblings().slideUp("fast");
             $(this)
               .parent()
               .parent()
               .animate({ width: (3 * $w_Max) / 4 }, 200);
-            $(this)
-              .siblings(".child2")
-              .slideDown();
-            $(this)
-              .siblings(".child2")
-              .css("display", "flex");
-            $(this)
-              .parent()
-              .parent()
-              .siblings()
-              .animate({ width: 0 }, 200);
-            $(this)
-              .parent()
-              .attr("id", "max");
+            $(this).siblings(".child2").slideDown();
+            $(this).siblings(".child2").css("display", "flex");
+            $(this).parent().parent().siblings().animate({ width: 0 }, 200);
+            $(this).parent().attr("id", "max");
             $(this).addClass("activeEC");
-          } else if (
-            $(this)
-              .parent()
-              .attr("id") == "max"
-          ) {
+          } else if ($(this).parent().attr("id") == "max") {
             $("p.title").show();
-            $(this)
-              .parent()
-              .siblings()
-              .slideDown("fast");
-            $(this)
-              .parent()
-              .parent()
-              .animate({ width: $w_Min }, 200);
-            $(this)
-              .siblings(".child2")
-              .slideUp("fast");
+            $(this).parent().siblings().slideDown("fast");
+            $(this).parent().parent().animate({ width: $w_Min }, 200);
+            $(this).siblings(".child2").slideUp("fast");
             $(this)
               .parent()
               .parent()
               .siblings()
               .animate({ width: $w_Min }, 200);
-            $(this)
-              .parent()
-              .attr("id", "min");
+            $(this).parent().attr("id", "min");
             $(this).removeClass("activeEC");
           }
         });
