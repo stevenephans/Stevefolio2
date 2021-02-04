@@ -17,6 +17,8 @@ function initializer(carouselSlides, slideCaption) {
     imageDad.appendChild(imageCaption);
     document.querySelector(".carousel").appendChild(imageDad);
   }
+
+  showImage(0);
 }
 
 function showImage(imageIndex) {
@@ -29,7 +31,6 @@ function showImage(imageIndex) {
   $($(".carousel .carSlide").toArray()[imageIndex]).show();
   currentImage = imageIndex;
 }
-showImage(0);
 
 function showNext() {
   if (currentImage >= carouselSlides.length - 1) {
