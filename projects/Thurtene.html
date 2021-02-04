@@ -3,6 +3,7 @@
   <head>
 
     <link rel="stylesheet" href="../CSS/Proj_Thurtene.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap"
       rel="stylesheet"
@@ -23,14 +24,15 @@
         <div class="menu">
           <ul>
             <li>
+              <a class="pagelink" href="../About.html">About</a>
+            </li>
+            <li>
               <a class="pagelink" href="../Projects.html">Projects</a>
             </li>
             <li>
               <a class="pagelink" href="../Courses.html">Courses</a>
             </li>
-            <li>
-              <a class="pagelink" href="../About.html">About</a>
-            </li>
+
             <li>
               <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">CV</a>
             </li>
@@ -76,14 +78,15 @@
 
            
           </p>
-         
+
+
+
           <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
             <div class="carousel"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
           </div>
 
-          <div class="arrows" style="margin-top:-500px; z-index:10; width:90%; margin-left:auto; margin-right:auto">
-            <img src="../images/Carousel Arrow.png">
-          </div>
           
           <div class="divider"></div>
           
@@ -151,10 +154,13 @@
       initComparisons();
     </script>
 
+
+
 <!-- <div class="slide">
   <img src="../images/13_DJDone.jpg" width="700" height="500">
 </div> -->
-
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="carousel.js"></script>
     <script>
       var carouselSlides = [
         "../images/13_DJDone.jpg",
@@ -163,14 +169,11 @@
         "../images/13_StageDone.jpg",
       ];
 
-      for (var i=0; i<carouselSlides.length; i++){
-        var imageDad = document.createElement("div");
-        imageDad.setAttribute("class", "slide");
-        var imageSon = document.createElement("img");
-        imageSon.setAttribute("src", carouselSlides[i]);
-        imageDad.appendChild(imageSon);
-        document.querySelector(".carousel").appendChild(imageDad);
-      }
+      var slideCaptions = ['Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1Slideas;ldkjfsa;ldkfjas dlfks jdflks jdlkfjdlskjdf owiejfdalskj earhgoraj fjkdlfseijt sdlkjf  1','Slide 2', 'Slide 3', 'Slide 4']
+
+    $(document).ready(function(){
+      initializer(carouselSlides, slideCaptions)
+    });
     </script>
   
   </body>

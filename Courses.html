@@ -34,32 +34,32 @@
       <div class="content">
         <div class="header">
           <h1 id="title">Learning By Schooling</h1>
-          <!-- <p id="about">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl nulla, auctor id erat
-            vel, tristique fermentum tortor. Fusce suscipit dui nec libero luctus, gravida porttitor
-            diam auctor. Nam accumsan erat elit, ut feugiat leo finibus ac. Aliquam semper purus
-            eget volutpat posuere. Ut vestibulum posuere ex sit amet venenatis. Donec quis auctor
-            arcu, sed suscipit massa. Integer urna mi, pharetra nec augue faucibus, mattis faucibus
-            risus. Nulla in leo in sem ultricies mattis ac ac ipsum. Suspendisse potenti. Praesent
-            at pellentesque mi. Etiam sodales dapibus leo, ac pellentesque ex blandit at.
-          </p> -->
         </div>
 
         <div class="page">
           <!------------------ COLUMN ONE START [CU] ---------------------------------------------------------------------------->
           <div class="school">
             <!-- !SOFT MACHINES -->
+            <!--
+              - McKibben Muscle Research Presentation
+                - topology optimization, asymetric braid pattern
+              - Actuator Build Project
+              - Pic: McKibben Muscle (gif?)
+            -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
                 <p class="title">Soft Machines</p>
               </div>
               <div class="child2">
                 <div class="grankid1">
-                  <div class="profpic">
-                    <img class="slide" src="images/BioPic2.jpg" />
-                    <img class="slide" src="images/BioPic1.jpg" />
-                    <img class="slide" src="images/BioPic3.jpg" />
-                    <img class="slide" src="images/BioPic4.jpg" />
+                  <div class="picContainer">
+                    <img class="pic" src="images/BioPic2.jpg" />
+                  </div>
+                  <div class="picContainer">
+                    <img class="pic" src="images/hackcu_banner.jpg" />
+                  </div>
+                  <div class="picContainer">
+                    <img class="pic" src="images/BioPic2.jpg" />
                   </div>
                 </div>
 
@@ -80,17 +80,23 @@
               </div>
             </div>
             <!-- !FEEDBACK CONTROL -->
+            <!--
+              - Shalom Ruben Link
+              - Concepts Overview
+                - System Modeling, Mimo -> Siso simplification, Bode, Nyquist, RL, Routh Array
+              - Pic: ???
+            -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
                 <p class="title">Feedback Control</p>
               </div>
               <div class="child2">
                 <div class="grankid1">
-                  <div class="profpic">
-                    <img class="slide" src="images/BioPic2.jpg" />
-                    <img class="slide" src="images/BioPic1.jpg" />
-                    <img class="slide" src="images/BioPic3.jpg" />
-                    <img class="slide" src="images/BioPic4.jpg" />
+                  <div class="picContainer">
+                    <img class="pic" src="images/BioPic2.jpg" />
+                  </div>
+                  <div class="picContainer">
+                    <img class="pic" src="images/hackcu_banner.jpg" />
                   </div>
                 </div>
 
@@ -111,6 +117,12 @@
               </div>
             </div>
             <!-- !FEA -->
+            <!--
+              - John Evans Link
+              - Concepts Overview
+                - 1D model problem, 2D heat, 2D plane strain elastostatic, mixed mesh, focus on theory and math, MATLAB
+              - Pic: Colorful FEA
+            -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
                 <p class="title">Finite Element Analysis</p>
@@ -142,6 +154,11 @@
               </div>
             </div>
             <!-- !MATH METH -->
+            <!--
+              - Baowen Li Link
+              - Concept Overview
+                - 3D Calc, Vector Algebra, Linear Algebra, ODE, Fourier, Laplace
+            -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
                 <p class="title">Mathematical Methods</p>
@@ -153,30 +170,23 @@
           <!------------------ COLUMN TWO START [Not CU] ---------------------------------------------------------------------------->
           <div class="school">
             <!-- !DE ANZA -->
+            <!--
+              - DMT dept Link
+              - AS Coursework Link
+              - Brief Classwork Descrips
+                - Solidworks, 3D printing, CNC/Manual Machining
+              - Pic: Dope CNC pic
+            -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
                 <p class="title">De Anza College</p>
               </div>
               <div class="child2"></div>
             </div>
-            <!-- !JS REACT -->
-            <div class="mama" id="min">
-              <div class="child1" id="EC">
-                <p class="title">Udemy - React Native</p>
-              </div>
-              <div class="child2"></div>
-            </div>
             <!-- !C#/.NET -->
             <div class="mama" id="min">
               <div class="child1" id="EC">
-                <p class="title">Udemy - Unity/C# Game Design</p>
-              </div>
-              <div class="child2"></div>
-            </div>
-            <!-- WEB DEV -->
-            <div class="mama" id="min">
-              <div class="child1" id="EC">
-                <p class="title">Udemy - Web Development</p>
+                <p class="title">Unity/C# Game Design</p>
               </div>
               <div class="child2"></div>
             </div>
@@ -216,7 +226,7 @@
             $(this)
               .parent()
               .parent()
-              .animate({ width: (3 * $w_Max) / 4 }, 200);
+              .animate({ width: (8 * $w_Max) / 9 }, 200);
             $(this).siblings(".child2").slideDown();
             $(this).siblings(".child2").css("display", "flex");
             $(this).parent().parent().siblings().animate({ width: 0 }, 200);
