@@ -34,12 +34,16 @@
       </div>
 
       <div class="content">
+
         <div class="header">
           <h1 id="title">Hack CU</h1>
           <p id="skillz">HTML, CSS, UX, GRAPHIC DESIGN</p>
         </div>
+
         <div class="page">
+
           <div class="bannerbox parallax"></div>
+
           <p id="about">
             In February of 2020, some friends and I participated in CU Boulder's bi-annual hackathon, 
             <span
@@ -70,49 +74,15 @@
           were the only group to build our UX design into a working website. They awarded us a free year-long subscription to 
           Creative Cloud for the project. Our group's entry also won 'Most Random' in the overall competition.
           </p>
-          <div class="projinfo">
-            <h1>Design and Planning [ADD CAD PICTURES]</h1>
-          </div>
-          <div class="projinfo">
-            <h1 style="margin-top:20px">Facade Exterior</h1>
-            <div class="rowofpics">
-              <img src="../images/13_BookBuild.jpg" style="height:325px" />
-              <img src="../images/13_BookDone.jpg" style="height:325px" />
-            </div>
-            <p style="align-self:center">
-              We built an L-shaped stage with one leg designed as a subway platform and the other as
-              a city skyline.
-            </p>
-            <div class="rowofpics">
-              <img src="../images/13_DinerBuild.jpg" style="height:355px" />
-              <img src="../images/13_DinerDone.jpg" style="height:355px" />
-            </div>
-            <p style="align-self:center">
-              We built an L-shaped stage with one leg designed as a subway platform and the other as
-              a city skyline.
-            </p>
-          </div>
-          <div class="projinfo">
-            <h1 style="margin-top:20px">Facade Interior</h1>
-            <div class="rowofpics">
-              <img src="../images/13_StageBuild.jpg" style="height:325px" />
-              <img src="../images/13_StageDone.jpg" style="height:325px" />
-            </div>
 
-            <p style="align-self:center">
-              We built an L-shaped stage with one leg designed as a subway platform and the other as
-              a city skyline.
-            </p>
-            <div class="rowofpics">
-              <img src="../images/13_DJBuild.jpg" style="height:325px" />
-              <img src="../images/13_DJDone.jpg" style="height:325px" />
-            </div>
-            <p style="align-self:center">
-              We built an L-shaped stage with one leg designed as a subway platform and the other as
-              a city skyline.
-            </p>
+          <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
+            <div class="carousel"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
           </div>
+          
         </div>
+
         <footer class="footer">
           <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
             <img class="footLink" src="../images/Steve-LinkedIn.png" style="height:30px" />
@@ -124,5 +94,28 @@
         </footer>
       </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+      var carouselSlides = [
+        "../images/13_DJDone.jpg",
+        "../images/13_BookDone.jpg",
+        "../images/13_DinerDone.jpg",
+        "../images/13_StageDone.jpg",
+      ];
+
+      var slideCaptions = [
+        'Slide 1',
+        'Slide 2', 
+        'Slide 3', 
+        'Slide 4'];
+
+    $(document).ready(function(){
+      initializer(carouselSlides, slideCaptions)
+    });
+    </script>
+
+
   </body>
 </html>

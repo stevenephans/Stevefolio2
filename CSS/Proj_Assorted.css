@@ -183,6 +183,79 @@ h1 {
   text-align: justify;
   border-bottom: 1px solid rgb(216, 224, 226);
 }
+
+/*--------------------------------*/
+/*-------CAROUSEL CSS-------------*/
+/*--------------------------------*/
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 700px; */
+  /* white-space: nowrap; */
+  width: 90%;
+  /* height: auto; */
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 150px;
+  width: 50px;
+}
+
+.arrows img {
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  transition-duration: 0.1s;
+}
+
+.arrows img:hover {
+  height: 80%;
+  transition-duration: 0.1s;
+  filter: drop-shadow(-20px 0px 0px #ff3b3f);
+  -webkit-filter: drop-shadow(-20px 0px 0px #ff3b3f);
+}
+
+.arrows img:active {
+  height: 70%;
+}
+
+.carousel {
+  overflow: hidden;
+  /* height: 800px; */
+  width: 80%;
+  margin: 0px 10px;
+  padding: 20px;
+  border: 3px solid rgb(216, 224, 226);
+}
+
+.carSlide {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.carPic {
+  /* width: 100%; */
+  /* height: auto; */
+  width: 100%;
+  height: 100%;
+}
+
+#caption {
+  margin: 10px 0 0 0;
+  /* flex: 1; */
+}
+
+/*-------------------------------------------*/
+
 .projinfo {
   display: flex;
   flex-direction: column;
@@ -205,7 +278,7 @@ footer {
   flex-grow: 1;
   max-height: 50px;
   padding-top: 10px;
-  margin: 0 10px;
+  margin: 20px 10px 0 10px;
   text-align: center;
   vertical-align: middle;
   align-content: center;

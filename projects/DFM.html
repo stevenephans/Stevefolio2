@@ -36,10 +36,12 @@
       </div>
 
       <div class="content">
+
         <div class="header">
           <h1 id="title">Design For Manufacturing</h1>
           <p id="skillz">CAD, DFMA, GD&T, Product Design, Project Management</p>
         </div>
+        
         <div class="page">
           <div class="bannerbox parallax"></div>
           <p id="about">
@@ -55,29 +57,14 @@
             reduce cost without sacrificing product functionality. The second report required similar analysis, but concerned
             a novel product design developed by the group.
           </p>
-          <div class="projinfo">
-            <h1>Reverse Engineering Project</h1>
-            <p>
-              Design Thinking is a human-centered approach to product
-              development. Before any ideation took place, we needed to
-              understand our user's point-of-view. Why don't they always pick up
-              after their pets? What's the worst bit about the clean-up process?
-              We interviewed numerous dog owners in the Boulder area, listening
-              to their views on the issue and looking for hidden insights and
-              common themes.
-              <br />
-              <br />
-            </p>
+
+
+          <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
+            <div class="carousel"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
           </div>
-          <div class="projinfo">
-            <h1 style="margin-top: 20px">Engineering Design Project</h1>
-            <p>
-              With these broad-stroke needs of our users in mind, our team began
-              brainstorming every possible solution we could imagine. We charted
-              these ideas in the concept map below.
-              <br />
-            </p>
-          </div>
+
         <footer class="footer">
           <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
             <img
@@ -97,5 +84,27 @@
         </footer>
       </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+      var carouselSlides = [
+        "../images/13_DJDone.jpg",
+        "../images/13_BookDone.jpg",
+        "../images/13_DinerDone.jpg",
+        "../images/13_StageDone.jpg",
+      ];
+
+      var slideCaptions = [
+        'Slide 1',
+        'Slide 2', 
+        'Slide 3', 
+        'Slide 4'];
+
+    $(document).ready(function(){
+      initializer(carouselSlides, slideCaptions)
+    });
+    </script>
+
   </body>
 </html>
