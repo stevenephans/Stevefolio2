@@ -27,7 +27,7 @@
             </li>
 
             <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">CV</a>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -37,7 +37,7 @@
 
         <div class="header">
           <h1 id="title">Hack CU</h1>
-          <p id="skillz">HTML, CSS, UX, GRAPHIC DESIGN</p>
+          <p id="skillz">HTML + CSS + GRAPHIC DESIGN</p>
         </div>
 
         <div class="page">
@@ -50,8 +50,8 @@
             ><a href="https://hackcu.org/" target="_blank" class="inlineLink"
               >HackCU</a
             ></span>, put on by Major League Hacking. Hack CU was my first ever hackathon, and seeing as I had never 
-            programmed a line of code in my life as of that August I was both nervous and excited to see how I could 
-            help my team (who are all Computer Science Masters students).
+            programmed a line of code in my life as of August 2019 I was both nervous and excited to see how I could 
+            help my team (who are all Computer Science Master's students).
           </br>
           </br>
           The contest had no rules or limitations - any team could code any project they imagined.  However, there 
@@ -61,7 +61,7 @@
           ><a href="https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game" target="_blank" class="inlineLink"
             >Wikirace</a
           ></span>, except in ours you would have to navigate from a start to an end hashtag solely using other hashtags 
-          in the available tweets. We dubbed it '#THERACE'.
+          in the available tweets. We dubbed it '#RACE'.
         </br>
         </br>
           Besides helping develop the idea, I designed the site's UX with Adobe XD and coded the entire front-end. As the 
@@ -76,9 +76,9 @@
           </p>
 
           <div class="carouselContainer">
-            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
-            <div class="carousel"></div>
-            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1, carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1, carouselSlides)" ></div>
           </div>
           
         </div>
@@ -98,6 +98,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="carousel.js"></script>
     <script>
+      var carousel1 = "#carousel1";
       var carouselSlides = [
         "../images/13_DJDone.jpg",
         "../images/13_BookDone.jpg",
@@ -112,7 +113,7 @@
         'Slide 4'];
 
     $(document).ready(function(){
-      initializer(carouselSlides, slideCaptions)
+      initializer(carouselSlides, slideCaptions, carousel1)
     });
     </script>
 

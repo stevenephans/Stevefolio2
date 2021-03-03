@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/Proj_Doodle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="nav">
+        <div class="logo">
+          <a href="../About.html"
+            ><img id="logo" src="../images/SWE_Blue.png"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a class="pagelink" href="../About.html">About</a>
+            </li>
+            <li>
+              <a class="pagelink" href="../Projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="pagelink" href="../Courses.html">Courses</a>
+            </li>
+
+            <li>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="header">
+          <h1 id="title">Doodle Design</h1>
+          <p id="skillz">Entrepreneurship + Soft Goods + DFMA + Packaging Design + Graphic Design + Marketing</p>
+        </div>
+        
+        <div class="page">
+          <div class="bannerbox parallax"></div>
+          <p id="about">
+            My undergraduate education solidified my interest in product design engineering and inspired me to undertake one of the most valuable experiences 
+            of my professional life.  Armed with our engineering degrees and a cache of ideas, my good friend and I co-founded our own 
+            product development company, Doodle Design LLC. While running Doodle, we successfully launch two distinct products: 
+            <br/>
+            <br/>
+            Hat Flaps – an amusing earmuff accessory for baseball caps.
+            <br/>
+            Dog Hearts - a uniquely animated iPhone app for the card game Hearts
+            <br/>
+            <br/>
+            It was a veritable crash course in the realities of taking a polished product to market.  Every day presented 
+            a new challenge to conquer, largely outside of the actual engineering process.  We negotiated with manufacturers, pitched to corporate buyers, and 
+            re-worked advertising strategies to best serve our identified user market. Although Doodle closed doors after a year of operation, the entrepreneurial 
+            adventure was a tremendous learning experience. 
+          </p>
+
+          <h2 id="subhead">Hat Flaps</h2>
+
+          <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1,carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1,carouselSlides)" ></div>
+          </div>
+
+          <div class="divider"></div>
+          <h2 id="subhead">Dog Hearts</h2>
+          <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel2,carouselSlides2)" ></div>
+            <div class="carousel" id="carousel2"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel2,carouselSlides2)" ></div>
+          </div>
+
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
+            <img
+              class="footLink"
+              src="../images/Steve-LinkedIn.png"
+              style="height: 30px"
+            />
+          </a>
+          <a href="https://github.com/stevenephans" target="_blank">
+            <img
+              class="footLink"
+              src="../images/Steve-Github.png"
+              style="height: 30px"
+            />
+          </a>
+          <!-- <p>-- POWERED BY STEVE --</p> -->
+        </footer>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+      var carousel1 = "#carousel1";
+      var carousel2 = "#carousel2";
+
+      var carouselSlides = [
+        "../images/doodle_KS.jpg",
+        "../images/doodle_finaldes.jpg",
+        "../images/doodle_pkg.jpg",
+        "../images/doodle_hfred.jpg",
+        "../images/doodle_camousa.jpg",
+        "../images/mecha_ecitll.jpg",
+      ];
+
+      var slideCaptions = [
+      'After honing our design for manufacturability, we launched a <span><a href="https://www.kickstarter.com/projects/doodledez/hat-flaps-warm-your-ears-in-style/description" target="_blank" class="inlineLink">Kickstarter campaign</a></span> to generate capital for the first production run. Although it was not a viral Kickstarter sensation, the campaign was a strong first success. In addition to making several hundred sales, it helped with our Target Market Identification and provided data on the relative popularity of color options.' ,
+        'Our 4th and final iteration. Changes made to the cut pattern and tassle braid style greatly reduced material waste and production time.', 
+        'I developed a simple packaging solution for in-store purchases. The compliancsldkfjsldkfjsdlkfj',
+        'Determining which colors to offer was exceptionally challenging. We wanted options to match as many hats as possible, but encountered obstacles both seen and unforseen.', 
+        'We also offered USA and camouflage themes. These turned out ot be two of our best selling designs.',
+        'What used to be my bedroom.'];
+
+        var carouselSlides2 = [
+        "../images/doodle_splash.jpg",
+        "../images/doodle_DHlogo.png",
+        "../images/doodle_mouse.png",
+        "../images/doodle_happydog.png",
+      ];
+
+      var slideCaptions2 = [
+      'After honing our design for manufacturability, we launched a <span><a href="https://www.kickstarter.com/projects/doodledez/hat-flaps-warm-your-ears-in-style/description" target="_blank" class="inlineLink">Kickstarter campaign</a></span> to generate capital for the first production run. Although it was not a viral Kickstarter sensation, the campaign was a strong first success. In addition to making several hundred sales, it helped with our Target Market Identification and provided data on the relative popularity of color options.' ,
+        'Our 4th and final iteration. Changes made to the cut pattern and tassle braid style greatly reduced material waste and production time.', 
+        'I developed a simple packaging solution for in-store purchases. The compliancsldkfjsldkfjsdlkfj',
+        'Determining which colors to offer was exceptionally challenging. We wanted options to match as many hats as possible, but encountered obstacles both seen and unforseen.', 
+      ];
+
+    $(document).ready(function(){
+      initializer(carouselSlides, slideCaptions, carousel1),
+      initializer(carouselSlides2, slideCaptions2, carousel2)
+    });
+    </script>
+
+  </body>
+</html>

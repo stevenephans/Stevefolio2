@@ -29,7 +29,7 @@
             </li>
 
             <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">CV</a>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -39,30 +39,30 @@
 
         <div class="header">
           <h1 id="title">Design For Manufacturing</h1>
-          <p id="skillz">CAD, DFMA, GD&T, Product Design, Project Management</p>
+          <p id="skillz">CAD + DFMA + GD&T + Technical Writing + Product Design</p>
         </div>
         
         <div class="page">
           <div class="bannerbox parallax"></div>
           <p id="about">
-            DFM covered an immense amount of material - manufacturing proccesses strengths & limitations/design strategies/relative costs, 
+            DFM taught me an immense amount of material - manufacturing proccesses strengths & limitations/design strategies/relative costs, 
             engineering material selection, and how to navigate all these options to optimize a part/assembly of parts' functionality and 
-            price point.  We covered GD&T and how to create fully-dimensioned, readable drawings.  It was hands down one of the most 
+            price point.  We lso covered GD&T and how to create fully-dimensioned, readable drawings.  It was hands down one of the most 
             information-dense courses I've ever taken.  
             <br />
             <br />
             The course deliverables were two comprehensive engineering design reports. For the first, each group selected an existing 
-            product with 15+ parts and reverse-engineered it completely: model all components, draft manufacturing drawings, fully evaluate
-            the production process (manufacturing methods, material choices, product assembly), and finally provide 3 DFMA improvements to 
-            reduce cost without sacrificing product functionality. The second report required similar analysis, but concerned
+            product with 15+ parts and reverse-engineered it completely: model all components, draft manufacturing drawings, evaluate
+             the production process (material choices, manufacturing methods, assembly procedures), and advise 3 DFMA improvements to 
+            reduce cost without sacrificing functionality. The second report required similar analysis, but for
             a novel product design developed by the group.
           </p>
 
 
           <div class="carouselContainer">
-            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
-            <div class="carousel"></div>
-            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1, carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1, carouselSlides)" ></div>
           </div>
 
         <footer class="footer">
@@ -88,6 +88,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="carousel.js"></script>
     <script>
+      var carousel1 = "#carousel1";
       var carouselSlides = [
         "../images/13_DJDone.jpg",
         "../images/13_BookDone.jpg",
@@ -102,7 +103,7 @@
         'Slide 4'];
 
     $(document).ready(function(){
-      initializer(carouselSlides, slideCaptions)
+      initializer(carouselSlides, slideCaptions, carousel1)
     });
     </script>
 

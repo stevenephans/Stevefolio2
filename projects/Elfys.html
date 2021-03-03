@@ -29,7 +29,7 @@
             </li>
 
             <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">CV</a>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -39,30 +39,32 @@
 
         <div class="header">
           <h1 id="title">Elfy's Inc</h1>
-          <p id="skillz">Injection Molding, CAD, DFMA, Machine Shop, CAM, Quality Control</p>
+          <p id="skillz">Injection Molding + CAD + CNC Machining + DFMA + GD&T + CAM + CMM</p>
         </div>
         
         <div class="page">
           <div class="bannerbox parallax"></div>
           <p id="about">
-            DFM covered an immense amount of material - manufacturing proccesses strengths & limitations/design strategies/relative costs, 
-            engineering material selection, and how to navigate all these options to optimize a part/assembly of parts' functionality and 
-            price point.  We covered GD&T and how to create fully-dimensioned, readable drawings.  It was hands down one of the most 
-            information-dense courses I've ever taken.  
+            Elfy's Inc specialized in quick-turn injection molded prototypes. Our clients ranged from the veteran engineer with a career's 
+            worth of design experience to retirees who knew little to nothing about injection molding, but needed help turning their 3D printed idea 
+            into a mass-produceable product. During my 2 years of work, I became deeply familiar with injection molded part design requirements and material options. 
+            I helped realize designs for medical devices, toys, electronic housings, and a host of other consumer products.
             <br />
             <br />
-            The course deliverables were two comprehensive engineering design reports. For the first, each group selected an existing 
-            product with 15+ parts and reverse-engineered it completely: model all components, draft manufacturing drawings, fully evaluate
-            the production process (manufacturing methods, material choices, product assembly), and finally provide 3 DFMA improvements to 
-            reduce cost without sacrificing product functionality. The second report required similar analysis, but concerned
-            a novel product design developed by the group.
+            As the sole manufacturing engineer, I wore many hats - mold design, mold fabrication, and part dimensional validation were my primary responsibilites outside of design consultation. 
+            But with such a small team, we all worked together to accomplish whatever was needed. I helped our process technician with molding machine repairs, 
+            delivered completed parts to clients occasionally, built a website for the company, and sorted out more IT problems than I ever thought I would. 
+            ADD ABOUT KNOWING EDM, CNC, MOLDING, OVERMOLDING, ULTRASONIC WELDING
+            <br/>
+            <br/>
+            As an aspiring product design engineer, it was an invaluable learning experience. The photos below comprise a small sample of the work we did.
           </p>
 
 
           <div class="carouselContainer">
-            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
-            <div class="carousel"></div>
-            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1,carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1,carouselSlides)" ></div>
           </div>
 
         <footer class="footer">
@@ -88,21 +90,27 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="carousel.js"></script>
     <script>
+      var carousel1 = "#carousel1";
       var carouselSlides = [
-        "../images/13_DJDone.jpg",
-        "../images/13_BookDone.jpg",
-        "../images/13_DinerDone.jpg",
-        "../images/13_StageDone.jpg",
+        "../images/elfys_mask.jpg",
+        "../images/elfys_usbcase.jpg",
+        "../images/elfys_bells.jpg",
+        "../images/elfys_overmold.jpg",
+        "../images/elfys_housing.jpg",
+        "../images/elfys_bike.jpg",
       ];
 
       var slideCaptions = [
-        'Slide 1',
-        'Slide 2', 
-        'Slide 3', 
-        'Slide 4'];
+        'Medical Device Component',
+        'Ultrasonically Welded Housing', 
+        'Multi-cavity Polished Mold', 
+        'TPE Overmold Protoype',
+        'Snap-fit Sensor Housing',
+        'Bike Seat'
+      ];
 
     $(document).ready(function(){
-      initializer(carouselSlides, slideCaptions)
+      initializer(carouselSlides, slideCaptions,carousel1)
     });
     </script>
 

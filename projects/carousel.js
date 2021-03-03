@@ -1,4 +1,4 @@
-function initializer(carouselSlides, slideCaption) {
+function initializer(carouselSlides, slideCaption, carouselNum) {
   console.log(carouselSlides.length);
   console.log(carouselSlides);
   console.log(document.querySelector(".carousel"));
@@ -15,35 +15,35 @@ function initializer(carouselSlides, slideCaption) {
     imageCaption.innerHTML = slideCaption[i]; //make contents of p whatever's in slideCaption array, slideCaption[i]);
     imageDad.appendChild(imageSon);
     imageDad.appendChild(imageCaption);
-    document.querySelector(".carousel").appendChild(imageDad);
+    document.querySelector(carouselNum).appendChild(imageDad);
   }
 
-  showImage(0);
+  showImage(0, carouselNum);
 }
 
-function showImage(imageIndex) {
-  $(".carousel .carSlide")
+function showImage(imageIndex, carouselNum) {
+  $(carouselNum + " .carSlide")
     .toArray()
     .forEach((imgEl) => {
       $(imgEl).hide();
     });
 
-  $($(".carousel .carSlide").toArray()[imageIndex]).show();
+  $($(carouselNum + " .carSlide").toArray()[imageIndex]).show();
   currentImage = imageIndex;
 }
 
-function showNext() {
+function showNext(carouselNum, carouselSlides) {
   if (currentImage >= carouselSlides.length - 1) {
-    showImage(0);
+    showImage(0, carouselNum);
   } else {
-    showImage(currentImage + 1);
+    showImage(currentImage + 1, carouselNum);
   }
 }
 
-function showPrev() {
+function showPrev(carouselNum, carouselSlides) {
   if (currentImage == 0) {
-    showImage(carouselSlides.length - 1);
+    showImage(carouselSlides.length - 1, carouselNum);
   } else {
-    showImage(currentImage - 1);
+    showImage(currentImage - 1, carouselNum);
   }
 }

@@ -81,7 +81,7 @@ a.pagelink:visited {
   padding: 10px 25px;
   margin: 5px 0px;
   font-family: "Great Fighter Demo";
-  font-size: 24px;
+  font-size: 32px;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -152,7 +152,7 @@ td {
 }
 
 .school {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -167,7 +167,7 @@ td {
   width: auto;
   font-family: "Raleway";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   letter-spacing: 1px;
   text-decoration: none;
   color: rgb(131, 128, 128);
@@ -209,8 +209,8 @@ td {
 }
 
 .pic {
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 45vh;
+  max-height: 45vh;
   width: auto;
 }
 
@@ -223,7 +223,7 @@ td {
 }
 
 .grankid2 {
-  margin: 0;
+  margin: 10px 50px;
 }
 
 #EC.activeEC:hover {
@@ -235,7 +235,7 @@ td {
 .activeEC {
   background-color: rgb(131, 128, 128);
   color: rgb(216, 224, 226);
-  font-size: 28px;
+  font-size: 36px;
   padding: 10px 0;
   text-transform: uppercase;
 }

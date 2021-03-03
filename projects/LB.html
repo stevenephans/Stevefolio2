@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/Proj_LB.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="nav">
+        <div class="logo">
+          <a href="../About.html"
+            ><img id="logo" src="../images/SWE_Blue.png"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a class="pagelink" href="../About.html">About</a>
+            </li>
+            <li>
+              <a class="pagelink" href="../Projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="pagelink" href="../Courses.html">Courses</a>
+            </li>
+
+            <li>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="header">
+          <h1 id="title">Longboard Building</h1>
+          <p id="skillz">Product Design + Wood Shop + Graphic Design</p>
+        </div>
+        
+        <div class="page">
+          <div class="bannerbox parallax"></div>
+          <p id="about">
+            I started longboarding in the 6th grade - around the same time my dad granted me supervision-free access to his rudimentary garage wood shop. 
+            Skating quickly became my go-to after school activity, and it wasn't long before I stared building boards myself. 
+            <br/>
+            <br/>
+            Longboard building was my 
+            unofficial introduction to engineering and product development. Over the course of 5 or so years, my process evolved from basic plywood cutouts, to laminated 
+            composite decks pressed into curved profiles. I started ordering single-ply hardwood sheets in bulk from Canadian sawmills so I could customize layer-to-layer grain alignment, 
+            and rolls of tri-axial fiberglass cloth to reduce deck thickness while improving strength and flexibility. At its peak, pretty much every penny I earned working at the neighborhood 
+            pizza parlor went to board building R&D. I never actually bought a board after my very first one...so I guess I was saving some money in that respect?
+            <br/>
+            <br/>
+            After band sawing and varnishing a few oval shaped slabs of 3/4" plywood I knew I needed to upgrade my manufacturing infrastructure, 
+            so I designed a press with an interchangeable rib system. Despite largely being made out of scrap I found in the garage, the press 
+            worked brilliantly.
+
+          </p>
+
+
+          <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1,carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1,carouselSlides)" ></div>
+          </div>
+
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
+            <img
+              class="footLink"
+              src="../images/Steve-LinkedIn.png"
+              style="height: 30px"
+            />
+          </a>
+          <a href="https://github.com/stevenephans" target="_blank">
+            <img
+              class="footLink"
+              src="../images/Steve-Github.png"
+              style="height: 30px"
+            />
+          </a>
+          <!-- <p>-- POWERED BY STEVE --</p> -->
+        </footer>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+      var carousel1 = "#carousel1";
+      var carouselSlides = [
+        "../images/elfys_mask.jpg",
+        "../images/elfys_usbcase.jpg",
+        "../images/elfys_bells.jpg",
+        "../images/elfys_overmold.jpg",
+        "../images/elfys_housing.jpg",
+        "../images/elfys_bike.jpg",
+      ];
+
+      var slideCaptions = [
+        'Medical Device',
+        'Ultrasonically Welded Housing', 
+        'Multi-cavity Mold', 
+        'TPE Overmold',
+        'Snap-fit Housing',
+        'Bike Seat'
+      ];
+
+    $(document).ready(function(){
+      initializer(carouselSlides, slideCaptions,carousel1)
+    });
+    </script>
+
+  </body>
+</html>

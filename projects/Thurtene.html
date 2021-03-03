@@ -34,7 +34,7 @@
             </li>
 
             <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">CV</a>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -44,7 +44,7 @@
         
         <div class="header">
           <h1 id="title">Thurtene</h1>
-          <p id="skillz">Project Management, CAD, Carpentry, Laser Cutting, Graphic Design</p>
+          <p id="skillz">Project Management + CAD + Wood Shop + Technical Writing + Graphic Design</p>
         </div>
         
         <div class="page">
@@ -79,17 +79,15 @@
            
           </p>
 
-
-
-          <div class="carouselContainer">
-            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
-            <div class="carousel"></div>
-            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
+          <!-- <div class="carouselContainer">
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1,carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1,carouselSlides)" ></div>
           </div>
-
           
-          <div class="divider"></div>
+          <div class="divider"></div> -->
           
+          <!-- projinfo stores before/after pics -->
           <div class="projinfo">
             <div class="img-comp-container" style = "margin-right:40px">
               <div class="img-comp-img">
@@ -148,20 +146,12 @@
 
       </div>
     </section>
-    
-    
-    <script>
-      initComparisons();
-    </script>
-
-
-
-<!-- <div class="slide">
-  <img src="../images/13_DJDone.jpg" width="700" height="500">
-</div> -->
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="carousel.js"></script>
     <script>
+      var carousel1 = "#carousel1";
+
       var carouselSlides = [
         "../images/13_DJDone.jpg",
         "../images/13_BookDone.jpg",
@@ -176,9 +166,15 @@
         'Slide 4'];
 
     $(document).ready(function(){
-      initializer(carouselSlides, slideCaptions)
+      initializer(carouselSlides, slideCaptions, carousel1)
     });
     </script>
+    
+    <script>
+      initComparisons();
+    </script>
+
+
   
   </body>
 </html>

@@ -29,7 +29,7 @@
             </li>
 
             <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">CV</a>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -39,31 +39,56 @@
 
         <div class="header">
           <h1 id="title">Mechatronics</h1>
-          <p id="skillz">System Integration, Arduino, Raspberry Pi, Computer Vision, Circuitry, CAD</p>
+          <p id="skillz">Circuitry + Signal Processing + Feedback Control + Arduino + Raspberry Pi + Computer Vision + CAD</p>
         </div>
         
         <div class="page">
           <div class="bannerbox parallax"></div>
           <p id="about">
-            DFM covered an immense amount of material - manufacturing proccesses strengths & limitations/design strategies/relative costs, 
-            engineering material selection, and how to navigate all these options to optimize a part/assembly of parts' functionality and 
-            price point.  We covered GD&T and how to create fully-dimensioned, readable drawings.  It was hands down one of the most 
-            information-dense courses I've ever taken.  
-            <br />
-            <br />
-            The course deliverables were two comprehensive engineering design reports. For the first, each group selected an existing 
-            product with 15+ parts and reverse-engineered it completely: model all components, draft manufacturing drawings, fully evaluate
-            the production process (manufacturing methods, material choices, product assembly), and finally provide 3 DFMA improvements to 
-            reduce cost without sacrificing product functionality. The second report required similar analysis, but concerned
-            a novel product design developed by the group.
+            Mechatronics revolved around designing a simple robot to execute a series of tasks determined by the class. 
+            We came up with a 'police academy' training course. The robot must autonomously navigate the course, identify criminals from bystanders 
+            (read: red construction paper people from green ones), and knock them over with a physical projectile. The work was entirely hands-on. 
+            I spent hours wiring circuits to microcontrollers, examining component datasheets, scripting in arduino, and troubleshooting any hardware or software issues that arose.
+            <br/>
+            <br/>
+            And then there was COVID. The abrupt and complete campus closure drastically changed the nature of class and overall feasibility of the project. 
+            Nearly all groups disbanded, opting for one of the impromptu, hands-off alternatives offered. Thankfully, the professor and I worked out a solution for 
+            any groups who wanted to continue: turn my one-bedroom apartment into an off-campus robotics lab. Given the vastly diminished resource access, expectations were lowered. 
+            In the end, we completed and proofed all subsystems (navigation, target ID, and projectile), but could not perform an integrated test due to resource limitations. 
+            But we made the best of a lousy situation without completely losing out on one of the most enriching courses I've ever taken. 
+            
           </p>
 
 
           <div class="carouselContainer">
-            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev()" ></div>
-            <div class="carousel"></div>
-            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext()" ></div>
+            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1, carouselSlides)" ></div>
+            <div class="carousel" id="carousel1"></div>
+            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1, carouselSlides)" ></div>
           </div>
+
+          <div class="divider"></div>
+
+          <div class="projinfo">
+          <iframe
+          width="704"
+          height="396"
+          src="https://www.youtube.com/embed/z2jfGL72Ggw?mute=1"
+        >
+        </iframe>
+        <iframe
+        width="704"
+        height="396"
+        src="https://www.youtube.com/embed/ZqzwRyclOkY"
+      >
+      </iframe>
+    
+      <iframe
+      width="704"
+      height="396"
+      src="https://www.youtube.com/embed/XrVVjmv5aJM"
+    >
+    </iframe>
+      </div>
 
         <footer class="footer">
           <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
@@ -88,21 +113,25 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="carousel.js"></script>
     <script>
+      var carousel1 = "#carousel1";
+
       var carouselSlides = [
-        "../images/13_DJDone.jpg",
-        "../images/13_BookDone.jpg",
-        "../images/13_DinerDone.jpg",
-        "../images/13_StageDone.jpg",
+        "../images/mecha_blockdiagram.jpg",
+        "../images/mecha_circuitdiagram.jpg",
+        "../images/mecha_robot.jpg",
+        "../images/mecha_ecitll.jpg",
+        "../images/mecha_ecitll.jpg",
       ];
 
       var slideCaptions = [
-        'Slide 1',
-        'Slide 2', 
-        'Slide 3', 
-        'Slide 4'];
+        'Our system integration block diagram. Given the circumstances (and it being our first time ever building a robot), we optimized our design based-off course specifics to keep things as simple as possible.' ,
+        'The final circuit design. Unfortunately we were unable to acquire all the components due to campus closure and issues from early pandemic shipping delays/shortages', 
+        'The completed build. We used ultrasonic sensor data to methodically follow the course walls, light sensors to detect the purple or yellow reflective tape which defined criminal/bystander areas, and the Pixy2 for our basic computer vision needs - identifying and aiming at targets.', 
+        'Our over-powered projectile system.  Pre-pandemic shooting requirements were quite demanding, so we wanted a design with range and power to spare. COVID compromises drastically reduced these requirements, and we lost access to campus fabrication facilities as well. Regardless, designing a robotically actuated pneumatic nerf cannon with a magazine was a delightful engineering challenge, and we achieved some functionality in the end',
+        'What used to be my bedroom.'];
 
     $(document).ready(function(){
-      initializer(carouselSlides, slideCaptions)
+      initializer(carouselSlides, slideCaptions, carousel1)
     });
     </script>
 

@@ -83,7 +83,7 @@ a.pagelink:visited {
   padding: 10px 25px;
   margin: 5px 0px;
   font-family: "Great Fighter Demo";
-  font-size: 24px;
+  font-size: 32px;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -140,7 +140,7 @@ h1 {
 #skillz {
   color: rgb(131, 128, 128);
   font-family: "Raleway";
-  font-size: 16px;
+  font-size: 24px;
   padding-bottom: 20px;
   text-align: center;
   font-weight: bold;
@@ -170,7 +170,7 @@ h1 {
   background-attachment: fixed;
   background-size: calc(100% - 200px);
   background-position-x: 100%;
-  background-position-y: 60%;
+  background-position-y: 0%;
   background-repeat: no-repeat;
 }
 
