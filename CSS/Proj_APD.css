@@ -166,11 +166,11 @@ h1 {
 }
 
 .parallax {
-  background-image: url(../images/apd_banner.jpg);
+  background-image: url(../images/apd_banner2-01.jpg);
   background-attachment: fixed;
   background-size: calc(100% - 200px);
   background-position-x: 100%;
-  background-position-y: 60%;
+  background-position-y: 0%;
   background-repeat: no-repeat;
 }
 
