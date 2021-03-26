@@ -36,7 +36,7 @@
       <div class="content">
 
         <div class="header">
-          <h1 id="title">Hack CU</h1>
+          <h1 id="title">#HashtagRace</h1>
           <p id="skillz">HTML + CSS + GRAPHIC DESIGN</p>
         </div>
 
@@ -45,11 +45,8 @@
           <div class="bannerbox parallax"></div>
 
           <p id="about">
-            In February of 2020, some friends and I participated in CU Boulder's bi-annual hackathon, 
-            <span
-            ><a href="https://hackcu.org/" target="_blank" class="inlineLink"
-              >HackCU</a
-            ></span>, put on by Major League Hacking. Hack CU was my first ever hackathon, and seeing as I had never 
+            In February of 2020, some friends and I participated in CU Boulder's bi-annual hackathon 
+            put on by Major League Hacking. Hack CU was my first ever hackathon, and seeing as I had never 
             programmed a line of code in my life as of August 2019 I was both nervous and excited to see how I could 
             help my team (who are all Computer Science Master's students).
           </br>
@@ -61,7 +58,10 @@
           ><a href="https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game" target="_blank" class="inlineLink"
             >Wikirace</a
           ></span>, except in ours you would have to navigate from a start to an end hashtag solely using other hashtags 
-          in the available tweets. We dubbed it '#RACE'.
+          in the available tweets. We dubbed it <span
+          ><a href="https://devpost.com/software/twitter-hashtag-race" target="_blank" class="inlineLink"
+            >'#HASHTAGRACE'.</a
+          ></span>
         </br>
         </br>
           Besides helping develop the idea, I designed the site's UX with Adobe XD and coded the entire front-end. As the 
@@ -100,17 +100,13 @@
     <script>
       var carousel1 = "#carousel1";
       var carouselSlides = [
-        "../images/13_DJDone.jpg",
-        "../images/13_BookDone.jpg",
-        "../images/13_DinerDone.jpg",
-        "../images/13_StageDone.jpg",
+        "../images/HCU20_xdMock.gif",
+        "../images/HCU20_winner.jpg",
       ];
 
       var slideCaptions = [
-        'Slide 1',
-        'Slide 2', 
-        'Slide 3', 
-        'Slide 4'];
+        'Our Adobe Xd Mock-up. As you make choices, the most common neighbor hashtags auto-populate the screen. Click count is tracked in the bottom left so you can compare your performance against Bob the Bot. If and when you successfully link from start to end, the UI pulls and displays the Tweets used. All hashtags used in the UI mock-up are completely made-up visual placeholders...in case that was not obvious.',
+        'Winner winner chicken dinner.'];
 
     $(document).ready(function(){
       initializer(carouselSlides, slideCaptions, carousel1)

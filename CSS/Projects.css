@@ -116,7 +116,7 @@ a.pagelink:active {
   flex-grow: 1;
   background-color: #efefef;
   flex-wrap: wrap;
-  align-content: stretch;
+  align-content: flex-start;
   justify-content: center;
   border-top: 1px solid rgb(216, 224, 226);
   margin: 10px;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/Proj_HackCU21.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="nav">
+        <div class="logo">
+          <a href="../About.html"
+            ><img id="logo" src="../images/SWE_Blue.png"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a class="pagelink" href="../About.html">About</a>
+            </li>
+            <li>
+              <a class="pagelink" href="../Projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="pagelink" href="../Courses.html">Courses</a>
+            </li>
+
+            <li>
+              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="header">
+          <h1 id="title">Launch Party</h1>
+          <p id="skillz">HTML + CSS + JAVASCRIPT + GRAPHIC DESIGN</p>
+        </div>
+
+        <div class="page">
+          <div class="bannerbox parallax"></div>
+
+          <p id="about">
+            When my friends asked me to once again join their Hack CU team I
+            readily accepted. With fully remote operation, the 2021 hackathon
+            didn't attract as many participants or sponsors, but there were
+            still some exciting challenges and prizes on the table. We opted to
+            compete for 'Best UI/UX' with our project -
+            <span
+              ><a
+                href="https://devpost.com/software/launch-party"
+                target="_blank"
+                class="inlineLink"
+                >Launch Party.</a
+              ></span
+            >
+            <br />
+            <br />
+            Launch Party is a dedicated platform for music fans to digitally
+            commune and listen to new album drops for the first time together.
+            The application's lets fans react positively/negatively to songs in
+            real time as they are listening and rate each song as well as the
+            album as a whole based-off their first impressions. After completing
+            the first listen, they then can access a dedicated page to discuss
+            the album in general, individual songs, and view aggregate stats
+            with everyone else who has listened.
+            <br />
+            <br />
+            Similar to the first hackathon, my teammates handled all back-end
+            programming and I handled the front-end code, UI, and UX. It was an
+            exhausting 24 hours, but we delivered an impressively complete MVP
+            and won the 'Best UI/UX' contest!
+          </p>
+
+          <div class="grankid1">
+            <div class="picContainer">
+              <img class="pic" src="../images/HCU21_xdMock.gif" />
+              <p>Adobe Xd Mock-Up</p>
+            </div>
+            <div class="picContainer">
+              <img class="pic" src="../images/HCU21_proto.gif" />
+              <p>JavaScript UI Prototype</p>
+            </div>
+            <div class="picContainer">
+              <img class="pic" src="../images/HCU21_MVP.jpg" />
+              <p>MVP with active Spotify account link</p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
+            <img
+              class="footLink"
+              src="../images/Steve-LinkedIn.png"
+              style="height: 30px"
+            />
+          </a>
+          <a href="https://github.com/stevenephans" target="_blank">
+            <img
+              class="footLink"
+              src="../images/Steve-Github.png"
+              style="height: 30px"
+            />
+          </a>
+          <!-- <p>-- POWERED BY STEVE --</p> -->
+        </footer>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+      var carousel1 = "#carousel1";
+      var carouselSlides = [
+        "../images/HCU21_xdMock.gif",
+        "../images/HCU21_proto.gif",
+        "../images/13_DinerDone.jpg",
+        "../images/13_StageDone.jpg",
+      ];
+
+      var slideCaptions = ["Slide 1", "Slide 2", "Slide 3", "Slide 4"];
+
+      $(document).ready(function () {
+        initializer(carouselSlides, slideCaptions, carousel1);
+      });
+    </script>
+  </body>
+</html>

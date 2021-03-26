@@ -199,31 +199,41 @@ td {
 }
 
 .picContainer {
-  display: inline;
+  display: flex;
   text-align: center;
-  flex: 0;
   margin: 0px 5px;
-  /* height: 60vh; */
+  height: 40vh;
+}
+
+.vidContainer {
+  display: flex;
+  text-align: center;
+  margin: 0px 5px;
+  height: 40vh;
+  width: 56vh;
+}
+
+.vid {
   width: 100%;
-  border-radius: 25px;
 }
 
 .pic {
-  min-height: 45vh;
-  max-height: 45vh;
-  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: scale-down;
 }
 
 .grankid1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 0 10px 0 0;
   max-width: 100%;
 }
 
 .grankid2 {
-  margin: 10px 50px;
+  margin: 10px;
+  border-top: 1px solid rgb(216, 224, 226);
+  padding-top: 10px;
 }
 
 #EC.activeEC:hover {
@@ -262,7 +272,7 @@ footer {
   flex-grow: 1;
   max-height: 50px;
   padding-top: 10px;
-  margin: 0 10px;
+  margin: auto 10px 0 10px;
   text-align: center;
   vertical-align: middle;
   align-content: center;
