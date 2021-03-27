@@ -140,17 +140,17 @@ a.pagelink:active {
 
 .bannerbox {
   width: 100%;
-  /*height: 330px;*/
-  height: 60vh;
+  height: 30vw;
 }
 
 .parallax {
   background-image: url(../images/hackcu_banner.jpg);
   background-attachment: fixed;
   background-size: calc(100% - 200px);
-  background-position-x: 100%;
+  background-position-x: 200px;
   background-position-y: 0%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /*--------------------------------*/

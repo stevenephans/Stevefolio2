@@ -162,16 +162,17 @@ h1 {
 
 .bannerbox {
   width: 100%;
-  height: 60vh;
+  height: 30vw;
 }
 
 .parallax {
   background-image: url(../images/unity_banner-01-01.png);
   background-attachment: fixed;
   background-size: calc(100% - 200px);
-  background-position-x: 100%;
+  background-position-x: 200px;
   background-position-y: 60%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 #about {
@@ -184,105 +185,20 @@ h1 {
   border-bottom: 1px solid rgb(216, 224, 226);
 }
 
-/*--------------------------------*/
-/*-------CAROUSEL CSS-------------*/
-/*--------------------------------*/
-
-.carouselContainer {
+.games {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  /* height: 700px; */
-  /* white-space: nowrap; */
-  width: 90%;
-  /* height: auto; */
 }
 
-.arrows {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  height: 150px;
-  width: 50px;
-}
-
-.arrows img {
-  align-self: center;
-  height: 100%;
-  width: 100%;
-  transition-duration: 0.1s;
-}
-
-.arrows img:hover {
-  height: 80%;
-  transition-duration: 0.1s;
-  filter: drop-shadow(-20px 0px 0px #ff3b3f);
-  -webkit-filter: drop-shadow(-20px 0px 0px #ff3b3f);
-}
-
-.arrows img:active {
-  height: 70%;
-}
-
-.carousel {
-  overflow: hidden;
-  /* height: 800px; */
-  width: 80%;
-  margin: 0px 10px;
-  padding: 20px;
+.gameContainer {
+  display: block;
+  width: 700px;
+  height: 500px;
   border: 3px solid rgb(216, 224, 226);
-}
-
-.carSlide {
-  /* height: 100%; */
-  display: flex;
-  flex-direction: column;
-}
-
-.carPic {
-  /* width: 100%; */
-  /* height: auto; */
-  width: 100%;
-  height: 100%;
-}
-
-#caption {
-  margin: 10px 0 0 0;
-  /* flex: 1; */
-}
-
-/*-------------------------------------------*/
-
-.projinfo {
-  display: flex;
-  flex-direction: column;
-  color: rgb(131, 128, 128);
-  font-family: "Raleway";
-  font-size: 16px;
-  margin: 0px 20px;
-  padding-bottom: 20px;
-  text-align: justify;
-  background-color: #efefef;
-  flex: 1;
-  align-content: center;
-  justify-content: center;
-  align-items: left;
-  justify-items: left;
-  border-bottom: 1px solid rgb(216, 224, 226);
-}
-
-iframe {
-  align-self: center;
-}
-
-.rowofpics {
-  display: flex;
-  width: 100%;
-  align-self: center;
-  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 footer {

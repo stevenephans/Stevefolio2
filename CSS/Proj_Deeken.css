@@ -162,16 +162,17 @@ h1 {
 
 .bannerbox {
   width: 100%;
-  height: 60vh;
+  height: 30vw;
 }
 
 .parallax {
   background-image: url(../images/deeken_banner-01.jpg);
   background-attachment: fixed;
   background-size: calc(100% - 200px);
-  background-position-x: 100%;
-  background-position-y: 30%;
+  background-position-x: 200px;
+  background-position-y: 60%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 #about {
@@ -195,32 +196,30 @@ h1 {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  /* height: 700px; */
-  /* white-space: nowrap; */
-  width: 90%;
-  /* height: auto; */
+  width: 100%;
 }
 
 .arrows {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-self: center;
-  height: 150px;
-  width: 50px;
+  height: 100px;
+  flex: 1;
 }
 
 .arrows img {
   align-self: center;
   height: 100%;
-  width: 100%;
+  width: auto;
   transition-duration: 0.1s;
+  object-fit: scale-down;
 }
 
 .arrows img:hover {
   height: 80%;
   transition-duration: 0.1s;
-  filter: drop-shadow(-20px 0px 0px #ff3b3f);
-  -webkit-filter: drop-shadow(-20px 0px 0px #ff3b3f);
+  filter: drop-shadow(-10px 0px 0px #ff3b3f);
+  -webkit-filter: drop-shadow(-10px 0px 0px #ff3b3f);
 }
 
 .arrows img:active {
@@ -229,29 +228,29 @@ h1 {
 
 .carousel {
   overflow: hidden;
-  /* height: 800px; */
-  width: 80%;
   margin: 0px 10px;
   padding: 20px;
   border: 3px solid rgb(216, 224, 226);
+  max-width: 75vw;
 }
 
 .carSlide {
-  /* height: 100%; */
-  display: flex;
+  display: table;
   flex-direction: column;
+  align-items: center;
 }
 
 .carPic {
-  /* width: 100%; */
-  /* height: auto; */
+  max-height: 70vh;
   width: 100%;
-  height: 100%;
+  object-fit: scale-down;
 }
 
 #caption {
   margin: 10px 0 0 0;
-  /* flex: 1; */
+  text-align: justify;
+  display: table-caption;
+  caption-side: bottom;
 }
 
 /*-------------------------------------------*/

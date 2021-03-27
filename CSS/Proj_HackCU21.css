@@ -140,23 +140,17 @@ a.pagelink:active {
 
 .bannerbox {
   width: 100%;
-  /*height: 330px;*/
-  height: 70vh;
-  /* border-top: 5px solid #03b2b4;
-  border-bottom: 5px solid #03b2b4; */
-  /* border-top: 5px solid rgb(131, 128, 128);
-  border-bottom: 5px solid rgb(131, 128, 128); */
-  /* border-top: 5px solid #ff3b3f;
-  border-bottom: 5px solid #ff3b3f; */
+  height: 30vw;
 }
 
 .parallax {
   background-image: url(../images/hackCU21_banner.jpg);
   background-attachment: fixed;
-  background-size: calc(100% - 220px);
-  background-position-x: 95%;
-  background-position-y: 70%;
+  background-size: calc(100% - 200px);
+  background-position-x: 200px;
+  background-position-y: 60%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /*--------------------------------*/

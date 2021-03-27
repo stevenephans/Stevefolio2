@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="../CSS/Proj_Assorted.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section class="container">
-      <div class="nav">
-        <div class="logo">
-          <a href="../About.html"
-            ><img id="logo" src="../images/SWE_Blue.png"
-          /></a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a class="pagelink" href="../About.html">About</a>
-            </li>
-            <li>
-              <a class="pagelink" href="../Projects.html">Projects</a>
-            </li>
-            <li>
-              <a class="pagelink" href="../Courses.html">Courses</a>
-            </li>
+<head>
+  <link rel="stylesheet" href="../CSS/Proj_Assorted.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet" />
+</head>
 
-            <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <section class="container">
+    <div class="nav">
+      <div class="logo">
+        <a href="../About.html"><img id="logo" src="../images/SWE_Blue.png" /></a>
       </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="pagelink" href="../About.html">About</a>
+          </li>
+          <li>
+            <a class="pagelink" href="../Projects.html">Projects</a>
+          </li>
+          <li>
+            <a class="pagelink" href="../Courses.html">Courses</a>
+          </li>
 
-      <div class="content">
-        <div class="header">
-          <h1 id="title">Assorted Projects</h1>
-          <!-- <p id="skillz">CAD, DFMA, GD&T, Product Design, Project Management</p> -->
-        </div>
-        <div class="page">
-          
-          <p id="about">
-            DFM covered an immense amount of material - manufacturing proccesses strengths & limitations/design strategies/relative costs, 
-            engineering material selection, and how to navigate all these options to optimize a part/assembly of parts' functionality and 
-            price point.  We covered GD&T and how to create fully-dimensioned, readable drawings.  It was hands down one of the most 
-            information-dense courses I've ever taken.  
-            <br />
-            <br />
-            The course deliverables consisted of two immense project design reports. For the first, each group had to selected an existing 
-            product with 15+ parts and reverse-engineer it completely: model all components, create fully dimensioned drawings, evaluate 
-            each one's manufacturing method/material choice with included cost estimations, and finally provide 3 DFMA improvements to 
-            reduce the product's cost without sacrificing functionality. The second report had similar requirements to the reverse 
-            engineering report, except each group had to develop a novel product in this case (total part count was flexible, and there were no DFMA 
-            improvements to make).
-          </p>
-          
-          <div class="carouselContainer">
-            <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1, carouselSlides)" ></div>
-            <div class="carousel" id="carousel1"></div>
-            <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png" onclick="showNext(carousel1, carouselSlides)" ></div>
+          <li>
+            <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="header">
+        <h1 id="title">Assorted Projects</h1>
+        <!-- <p id="skillz">CAD, DFMA, GD&T, Product Design, Project Management</p> -->
+      </div>
+      <p id="about">
+        None of the following mini-projects quite deserve a dedicated page on its own, but I'm nonetheless proud of the
+        work and
+        creativity each one involved. Together they make up a veritable pot-pourri of engineering, product design, and
+        art.
+        Enjoy!
+      </p>
+      <div class="page">
+
+
+
+        <div class="carouselContainer">
+          <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1, carouselSlides)">
           </div>
+          <div class="carousel" id="carousel1"></div>
+          <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png"
+              onclick="showNext(carousel1, carouselSlides)"></div>
+        </div>
 
         <footer class="footer">
           <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
-            <img
-              class="footLink"
-              src="../images/Steve-LinkedIn.png"
-              style="height: 30px"
-            />
+            <img class="footLink" src="../images/Steve-LinkedIn.png" style="height: 30px" />
           </a>
           <a href="https://github.com/stevenephans" target="_blank">
-            <img
-              class="footLink"
-              src="../images/Steve-Github.png"
-              style="height: 30px"
-            />
+            <img class="footLink" src="../images/Steve-Github.png" style="height: 30px" />
           </a>
           <!-- <p>-- POWERED BY STEVE --</p> -->
         </footer>
       </div>
-    </section>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="carousel.js"></script>
-    <script>
-      var carousel1 ="#carousel1";
-      var carouselSlides = [
-        "../images/13_DJDone.jpg",
-        "../images/13_BookDone.jpg",
-        "../images/13_DinerDone.jpg",
-        "../images/13_StageDone.jpg",
-      ];
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="carousel.js"></script>
+  <script>
+    var carousel1 = "#carousel1";
+    var carouselSlides = [
+      "../images/miscm_ortho-01.png",
+      "../images/miscm_orthotorque.jpg",
+      "../images/misca_mapfull-01.png",
+      "../images/misca_mapdetail-01.png",
+      "../images/misc_bike-01-01.png",
+      "../images/miscm_deAnz-01.png",
+      "../images/miscm_mount-01.png",
+      "../images/miscm_clipper-01.png",
+      "../images/misc_wallet.png",
+      "../images/misc_potaito.jpg",
+      "../images/misca_natpat.jpg",
+      "../images/misca_DG-01.png",
+    ];
 
-      var slideCaptions = [
-        'Slide 1',
-        'Slide 2', 
-        'Slide 3', 
-        'Slide 4'];
+    var slideCaptions = [
+      'While taking classes at De Anza, I wanted to make the most of the high-end fabrication'
+      + 'resources there, so I designed and built this simple orthopaedic screwdriver. The torque limiting feature works using a simple ball detente and compression spring. Besides the spring and driver bit, I designed and fabricated all of the components.',
+      'At the maximum limit, it fully drives a 1.25" screw into a 2x4 board. At the minimum limit, the ball-detente decouples after about 1/4"',
+      'I studied abroad the first semester of my junior year at Wash U, and only had 3 weeks of break sophomore summer before leaving for Australia. Excited for my upcoming travels, I decided I wanted one of those "pin" maps to record all the places I had been. <br/><br/>Turns out huge map posters are not cheap, so I decided to make my own during the abridged summer break. I scrounged my garage for materials, found a pad of watercolor paper, and pieced together the sheets into a wall-map-sized canvas. After that, all it took was 100+ hours of meticulous drawing and painting of every land mass on the planet. Voila. Free "pin" map.',
+      '',
+      'Considering it only cost $25, I got a terrific deal on my bike at the Boulder GoodWill. It was in great shape mechanically, but the paint job was concerningly rusty. With my excess bike budget, I decided to give give it a much needed facelift.',
+      'I machined these parts for my machine shop coursework at De Anza. <br/><br/>Top Right: Eccentrical Cylinder & Mounting Plate. These were the final 2 projects in the "Advanced Manual Machining" class. They required mill and lathe operations, and all tolerances were tighter than +/- 0.003". We inspected the parts on the probe CMM to confirm they met all specs. <br/><br/>The remaining three pieces were CNC machined in my "Intro to Numerical Control" class. I wrote the G-Code programs entirely by hand.',
+      'Before the era of in-car phone mounts arrived, I built myself a simple rig so I could conveniently watch YouTube while driving! (Just kidding - I exclusively used it to display map directions)',
+      'Again using the resources at De Anza, I modeled and 3D printed a custom 1.5" clipper guard. At the time I was tirelessly practicing my SolidWorks skills, and this was a fun little reverse-engineering project to test measurement and model accuracy. <br/><br>The end result snapped onto my clippers snugly and securely. That being said, it did not work so well...there is clearly a reason no one makes guards larger than 1". My hair just flopped out of the way under the blade pressure at that height. It worked great if I gelled my hair straight up though! Unfortunately I did not get any photographic evidence from that experiment.',
+      'After a couple years of being sat on regularly, my wallet has lost some of its sheen. But the functionality shines as bright as the day I made it!',
+      'My good friend Tait is an incredibly talented craftsmen',
+      'This was my completed "natural patterns" assignment for my Architectural Design minor at Wash U. We had to develop two modular units, one wood and one wire, based off patterns we observed at Forest Park. I abstracted the roots (wood) and bark (wire) from a particularly old, twisted tree.',
+      'Every year my friends and I get together for a casual disc golf tournament at Lake Tahoe. As the only attendee with any artistic inclination whatsoever, I get to design the official competition disc. Lake Tahoe has a sanctioned tournament called "King of the Lake" - which none of us are anywhere close to good enough for - so we dubbed our tourney "Prince of the Pond".'];
 
-    $(document).ready(function(){
+    $(document).ready(function () {
       initializer(carouselSlides, slideCaptions, carousel1)
     });
-    </script>
-    
-  </body>
+  </script>
+
+</body>
+
 </html>

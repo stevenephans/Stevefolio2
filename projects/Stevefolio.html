@@ -1,101 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="../CSS/Proj_Stevefolio.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section class="container">
-      <div class="nav">
-        <div class="logo">
-          <a href="../About.html"
-            ><img id="logo" src="../images/SWE_Blue.png"
-          /></a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a class="pagelink" href="../About.html">About</a>
-            </li>
-            <li>
-              <a class="pagelink" href="../Projects.html">Projects</a>
-            </li>
-            <li>
-              <a class="pagelink" href="../Courses.html">Courses</a>
-            </li>
+<head>
+  <link rel="stylesheet" href="../CSS/Proj_Stevefolio.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet" />
+</head>
 
-            <li>
-              <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <section class="container">
+    <div class="nav">
+      <div class="logo">
+        <a href="../About.html"><img id="logo" src="../images/SWE_Blue.png" /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="pagelink" href="../About.html">About</a>
+          </li>
+          <li>
+            <a class="pagelink" href="../Projects.html">Projects</a>
+          </li>
+          <li>
+            <a class="pagelink" href="../Courses.html">Courses</a>
+          </li>
+
+          <li>
+            <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="header">
+        <h1 id="title">This Website You Are Currently Viewing</h1>
+        <p id="skillz">HTML + CSS + JAVASCRIPT + GRAPHIC DESIGN</p>
       </div>
 
-      <div class="content">
-
-        <div class="header">
-          <h1 id="title">This Website You Are Currently Viewing</h1>
-          <p id="skillz">HTML + CSS + JAVASCRIPT + GRAPHIC DESIGN</p>
-        </div>
-        
-        <div class="page">
-          <div class="bannerbox parallax"></div>
-          <p id="about">
-            I chose to code my portfolio website from the ground-up. Though I had no coding experience outside MATLAB coming into the endeavor, I wanted to improve my programming 
-            skills and have always enjoyed graphic design. This project gave me a strong foundation in front-end web development and universal code trouble-shooting skills. More importantly, 
-            I feel it is a testament to my willingness and cabilities when faced with unfamiliar challenges.
-          </p>
+      <div class="page">
+        <div class="bannerbox parallax"></div>
+        <p id="about">
+          I chose to code my portfolio website from the ground-up. Though I had no coding experience outside MATLAB
+          coming into the endeavor, I wanted to improve my programming
+          skills and have always enjoyed graphic design. This project gave me a strong foundation in front-end web
+          development and universal code trouble-shooting skills. More importantly,
+          I feel it is a testament to my willingness and cabilities when faced with unfamiliar challenges.
+        </p>
 
         <footer class="footer">
           <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
-            <img
-              class="footLink"
-              src="../images/Steve-LinkedIn.png"
-              style="height: 30px"
-            />
+            <img class="footLink" src="../images/Steve-LinkedIn.png" style="height: 30px" />
           </a>
           <a href="https://github.com/stevenephans" target="_blank">
-            <img
-              class="footLink"
-              src="../images/Steve-Github.png"
-              style="height: 30px"
-            />
+            <img class="footLink" src="../images/Steve-Github.png" style="height: 30px" />
           </a>
           <!-- <p>-- POWERED BY STEVE --</p> -->
         </footer>
       </div>
-    </section>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="carousel.js"></script>
-    <script>
-      var carousel1 = "#carousel1";
-      var carouselSlides = [
-        "../images/elfys_mask.jpg",
-        "../images/elfys_usbcase.jpg",
-        "../images/elfys_bells.jpg",
-        "../images/elfys_overmold.jpg",
-        "../images/elfys_housing.jpg",
-        "../images/elfys_bike.jpg",
-      ];
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="carousel.js"></script>
+  <script>
+    var carousel1 = "#carousel1";
+    var carouselSlides = [
+      "../images/elfys_mask.jpg",
+      "../images/elfys_usbcase.jpg",
+      "../images/elfys_bells.jpg",
+      "../images/elfys_overmold.jpg",
+      "../images/elfys_housing.jpg",
+      "../images/elfys_bike.jpg",
+    ];
 
-      var slideCaptions = [
-        'Medical Device Component',
-        'Ultrasonically Welded Housing', 
-        'Multi-cavity Polished Mold', 
-        'TPE Overmold Protoype',
-        'Snap-fit Sensor Housing',
-        'Bike Seat'
-      ];
+    var slideCaptions = [
+      'Medical Device Component',
+      'Ultrasonically Welded Housing',
+      'Multi-cavity Polished Mold',
+      'TPE Overmold Protoype',
+      'Snap-fit Sensor Housing',
+      'Bike Seat'
+    ];
 
-    $(document).ready(function(){
-      initializer(carouselSlides, slideCaptions,carousel1)
+    $(document).ready(function () {
+      initializer(carouselSlides, slideCaptions, carousel1)
     });
-    </script>
+  </script>
 
-  </body>
+</body>
+
 </html>

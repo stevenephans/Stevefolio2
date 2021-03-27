@@ -9,7 +9,7 @@ function initializer(carouselSlides, slideCaption, carouselNum) {
     imageDad.setAttribute("class", "carSlide");
     var imageSon = document.createElement("img");
     imageSon.setAttribute("class", "carPic");
-    var imageCaption = document.createElement("p");
+    var imageCaption = document.createElement("div");
     imageSon.setAttribute("src", carouselSlides[i]);
     imageCaption.setAttribute("id", "caption");
     imageCaption.innerHTML = slideCaption[i]; //make contents of p whatever's in slideCaption array, slideCaption[i]);
