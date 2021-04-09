@@ -56,23 +56,17 @@
           its peak, pretty much every penny I earned working at the neighborhood
           pizza parlor went to board building R&D. I never actually bought a board after my very first one...so I guess
           I was saving some money in that respect?
-          <br />
-          <br />
-          After band sawing and varnishing a few oval shaped slabs of 3/4" plywood I knew I needed to upgrade my
-          manufacturing infrastructure,
-          so I designed a press with an interchangeable rib system. Despite largely being made out of scrap I found in
-          the garage, the press
-          worked brilliantly.
-
         </p>
 
 
         <div class="carouselContainer">
-          <div class="arrows"><img src="../images/Carousel Arrow.png" onclick="showPrev(carousel1,carouselSlides)">
+          <div class="arrows" onclick="showPrev(carousel1,carouselSlides)">
+            <img src="../images/Carousel Arrow.png" />
           </div>
           <div class="carousel" id="carousel1"></div>
-          <div class="arrows" style="transform: scaleX(-1);"><img src="../images/Carousel Arrow.png"
-              onclick="showNext(carousel1,carouselSlides)"></div>
+          <div class="arrows" style="transform: scaleX(-1);" onclick="showNext(carousel1,carouselSlides)">
+            <img src="../images/Carousel Arrow.png">
+          </div>
         </div>
 
         <footer class="footer">
@@ -93,8 +87,9 @@
     var carousel1 = "#carousel1";
     var carouselSlides = [
       "../images/LB_press.jpg",
-      "../images/LB_flordelis.jpg",
+      "../images/LB_pressrib.jpg",
       "../images/LB_laura-01.png",
+      "../images/LB_flordelis.jpg",
       "../images/LB_slab-01.png",
       "../images/LB_jack-01.png",
       "../images/LB_laserpattern@0.5x.jpg",
@@ -102,12 +97,13 @@
     ];
 
     var slideCaptions = [
-      'The board press. Ribs could be interchanged amongst the slots to create custom deck curvatures.',
-      'Maple & fiberglass composite board with laser-cut griptape',
-      'One of the first boards I made with the press. Birch & fiberglass composite with painstakingly hand-cut griptape',
-      'Canadian maple shortboard (sized to fit in my suitcase) with hand-cut griptape',
-      'My most recent board build (circa 2015) made with a vacuum press on a foam form. Vertically & horizontally laminated white/red oak fiberglass composite with laser-cut graphic',
-      'Laser-cut graphic AutoCAD design'
+      'After band sawing and varnishing a few oval shaped slabs of 3/4" plywood I knew I needed to upgrade my manufacturing infrastructure, so I designed a press with an interchangeable rib system. Despite largely being made out of scrap I found in the garage, the press worked brilliantly.',
+      'Interchangeable rib modules allowed me to adjust the longitudinal camber/rocker profile of each deck. Transverse concave was built into ribs, so I made three separate sets - one for light, mild, and aggressive concave.',
+      'One of the first boards I made with the press (circa 2006). Birch & fiberglass composite with painstakingly hand-cut griptape',
+      'Maple & fiberglass composite board with hand-cut griptape',
+      'Canadian maple shortboard (sized to fit in my suitcase) with hand-cut griptape. I hurriedly slapped this board together before my semester abroad in Australia, but I now consider it to be my my very best deck design. It\'s portable, responsive, and stable enough for some casual downhill riding. This has been my go-to board since 2012.',
+      'My most recent board build (circa 2015) molded in a vacuum press on a foam form. It\'s both horizontally and vertically laminated. First I made 2 striped plys by vertically laminating red/white oak strips, which I then pressed together horizontally with fiberglass inbetween. The minimalist graphic was laser-engraved.',
+      'Laser-cut graphic AutoCAD layout file.'
 
     ];
 
