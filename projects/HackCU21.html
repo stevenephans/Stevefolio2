@@ -46,8 +46,8 @@
           didn't attract as many participants or sponsors, but there were
           still some exciting challenges and prizes on the table. We opted to
           compete for 'Best UI/UX' with our project -
-          <span><a href="https://devpost.com/software/launch-party" target="_blank" class="inlineLink">Launch
-              Party.</a></span>
+          <span><a href="https://devpost.com/software/launch-party" target="_blank"
+              class="inlineLink">LaunchParty.</a></span>
           <br />
           <br />
           Launch Party is a dedicated platform for music fans to digitally
@@ -66,32 +66,62 @@
           and won the 'Best UI/UX' contest!
         </p>
 
-        <div class="grankid1">
-          <div class="picContainer">
-            <img class="pic" src="../images/HCU21_xdMock.gif" />
-            <p><strong>Adobe Xd Mock-Up</strong></p>
+        <div class="box">
+          <div class="subBox">
+            <h2>MVP With Working Spotify Account Link</h2>
+            <div class="subsubBox" style="height: 70vh;">
+              <img class="pic" src="../images/HCU21_MVP.gif" />
+            </div>
+            <p class="caption">Here is our final deliverable after 24 long hours of work. The MVP pulls all song
+              information from the linked account in real time using the Spotify API. The waveform visualization color
+              reflects the user's reaction clicks - minty green for positive feedback and grey for negative. On the
+              back end, all of the reaction information is time-stamped and stored in a database to eventually be
+              translated into song specific infographics. Finally, when the song approaches completion, the MVP prompts
+              you to rate the song.</p>
           </div>
-          <div class="picContainer">
-            <img class="pic" src="../images/HCU21_proto.gif" />
-            <p><strong>JavaScript UI Prototype</strong></p>
+
+        </div>
+
+        <div class="box" style="border-top: 1px solid rgb(216, 224, 226);">
+          <div class="subBox">
+            <h1>Adobe Xd UI Mock-Up</h1>
+            <div class="subsubBox">
+              <img class="pic" src="../images/HCU21_xdMock.gif" />
+            </div>
           </div>
-          <div class="picContainer">
-            <img class="pic" src="../images/HCU21_MVP.gif" />
-            <p><strong>MVP with active Spotify account link</strong></p>
+
+          <div class="subBox">
+            <h1>Vanilla JS Prototype</h1>
+            <div class="subsubBox">
+              <img class="pic" src="../images/HCU21_proto.gif" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <footer class="footer">
-        <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
-          <img class="footLink" src="../images/Steve-LinkedIn.png" style="height: 30px" />
-        </a>
-        <a href="https://github.com/stevenephans" target="_blank">
-          <img class="footLink" src="../images/Steve-Github.png" style="height: 30px" />
-        </a>
-        <!-- <p>-- POWERED BY STEVE --</p> -->
-      </footer>
-    </div>
+        <div class="box">
+          <div class="subBox">
+            <p>We built the MVP's front-end using the two interface protoypes above as reference. The Xd mock-up on
+              the left
+              provides a more complete view of the UI/UX flow, including a bare bones example of what the post-listen
+              album stats page might look like. While the MVP is more polished than the JavaScript prototype on the
+              right in almost every way, the prototype shows the reaction depletion feature in action. We wanted users
+              to react thoughtfully rather than just spam the buttons out of control (which inevitably some people would
+              do), so we opted for a finite amount per song. Each button's background fill displays the amount
+              remaining, and the button is disabled once fully depleted.</p>
+          </div>
+        </div>
+
+
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
+            <img class="footLink" src="../images/Steve-LinkedIn.png" style="height: 30px" />
+          </a>
+          <a href="https://github.com/stevenephans" target="_blank">
+            <img class="footLink" src="../images/Steve-Github.png" style="height: 30px" />
+          </a>
+          <!-- <p>-- POWERED BY STEVE --</p> -->
+        </footer>
+      </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

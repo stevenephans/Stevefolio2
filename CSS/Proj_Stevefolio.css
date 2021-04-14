@@ -175,6 +175,7 @@ h1 {
 }
 
 #about {
+  flex-grow: 1;
   color: rgb(131, 128, 128);
   font-family: "Raleway";
   font-size: 16px;
@@ -285,7 +286,7 @@ iframe {
 }
 
 footer {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   max-height: 50px;
   padding-top: 10px;
   margin: 20px 10px 0px 10px;

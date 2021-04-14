@@ -204,7 +204,7 @@ h1 {
   justify-content: flex-end;
   align-self: center;
   height: 100px;
-  flex: 1;
+  width: 60px;
 }
 
 .arrows img {
@@ -215,39 +215,36 @@ h1 {
   object-fit: scale-down;
 }
 
-.arrows img:hover {
-  height: 80%;
+.arrows:hover {
+  height: 80px;
   transition-duration: 0.1s;
   filter: drop-shadow(-10px 0px 0px #ff3b3f);
   -webkit-filter: drop-shadow(-10px 0px 0px #ff3b3f);
 }
 
-.arrows img:active {
-  height: 70%;
+.arrows:active {
+  height: 70px;
 }
 
 .carousel {
   overflow: hidden;
   margin: 0px 10px;
-  padding: 20px;
+  padding: 10px;
   border: 3px solid rgb(216, 224, 226);
   max-width: 75vw;
 }
 
 .carSlide {
   display: table;
-  flex-direction: column;
-  align-items: center;
 }
 
 .carPic {
-  max-height: 70vh;
-  width: 100%;
-  object-fit: scale-down;
+  height: 30vw;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 #caption {
-  margin: 10px 0 0 0;
   text-align: justify;
   display: table-caption;
   caption-side: bottom;
