@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../CSS/Proj_GradDes.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="container">
+    <div class="nav">
+      <div class="logo">
+        <a href="../About.html"><img id="logo" src="../images/SWE_Blue.png" /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="pagelink" href="../About.html">About</a>
+          </li>
+          <li>
+            <a class="pagelink" href="../Projects.html">Projects</a>
+          </li>
+          <li>
+            <a class="pagelink" href="https://www.linkedin.com/in/stephenwevans/" target="_blank">linkedin</a>
+          </li>
+
+          <li>
+            <a class="pagelink" href="../CV_EVANS.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="header">
+        <h1 id="title">Medtronic Co-op</h1>
+        <p id="skillz">Product Development + CAD + Rapid-Prototyping + DFMA</p>
+      </div>
+
+      <div class="page">
+        <div class="bannerbox parallax"></div>
+
+        <p id="about">
+          Graduate Design is the year-long capstone course in CU's Mechanical Engineering Master's Design
+          sub-track. Local engineering companies 'hire'
+          student groups to work on one of the firm's current projects. My teammates and I had the good fortune
+          of working with
+          <span><a href="https://www.medtronic.com/us-en/index.html" class="inlineLink" target="_blank">Medtronic
+              Surgical
+            </a></span>
+          on an original medical device design.
+          </br>
+          </br>
+          <b>Unfortunately Non-Disclosure Agreements prevent me from sharing many project details</b>, as I am
+          exceptionally proud of the engineering and creativity our team generated in the development process.
+          In brief, our team developed a novel handpiece for laparoscopic device articulation. The innovative design
+          made complex movement patterns - normally requiring robotic control - intuitive and achievable for
+          traditional laparoscopic devices. We also integrated additional device features ancillary to movement,
+          creating a stand-alone design with a full suite of functionality unlike any existing options.
+          </br>
+          </br>
+          I chose CU for my Master's in large part because of the Graduate Design program and it did not
+          disappoint. It was a phenomenal learning experience, and I
+          could not have asked for a better project, client, or team.
+        </p>
+
+
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/stephenwevans/" target="_blank">
+            <img class="footLink" src="../images/Steve-LinkedIn.png" style="height: 30px" />
+          </a>
+          <a href="https://github.com/stevenephans" target="_blank">
+            <img class="footLink" src="../images/Steve-Github.png" style="height: 30px" />
+          </a>
+          <!-- <p>-- POWERED BY STEVE --</p> -->
+        </footer>
+      </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="carousel.js"></script>
+  <script>
+    var carousel1 = "#carousel1";
+    var carouselSlides = [
+      "../images/HCU21_xdMock.gif",
+      "../images/HCU21_proto.gif",
+      "../images/13_DinerDone.jpg",
+      "../images/13_StageDone.jpg",
+    ];
+
+    var slideCaptions = ["Slide 1", "Slide 2", "Slide 3", "Slide 4"];
+
+    $(document).ready(function () {
+      initializer(carouselSlides, slideCaptions, carousel1);
+    });
+  </script>
+</body>
+
+</html>
